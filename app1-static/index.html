@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV — Muhamad Mahbub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1a1410; --paper: #f5f0e8; --accent: #c0392b; --muted: #7a6f63; --line: #d6cfc3;
+    }
+    body { font-family: 'DM Sans', sans-serif; background: var(--paper); color: var(--ink); min-height: 100vh; }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 2rem; }
+    header { border-bottom: 2px solid var(--ink); padding: 3.5rem 0 2.5rem; display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: end; animation: fadeUp .8s ease both; }
+    .name { font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 7vw, 5rem); font-weight: 900; line-height: .95; letter-spacing: -0.02em; }
+    .name span { color: var(--accent); }
+    .tagline { font-size: .95rem; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin-top: .8rem; }
+    .contact-pills { display: flex; flex-direction: column; gap: .4rem; text-align: right; }
+    .pill { font-size: .8rem; letter-spacing: .06em; padding: .3rem .8rem; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); text-decoration: none; transition: border-color .2s, color .2s; }
+    .pill:hover { border-color: var(--accent); color: var(--accent); }
+    section { padding: 2.8rem 0; border-bottom: 1px solid var(--line); animation: fadeUp .8s ease both; }
+    .sec-label { font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin-bottom: 1.4rem; }
+    .about-text { font-size: 1.15rem; line-height: 1.75; color: #3a332b; max-width: 620px; }
+    .entry { display: grid; grid-template-columns: 130px 1fr; gap: 0 2rem; margin-bottom: 1.8rem; }
+    .entry:last-child { margin-bottom: 0; }
+    .entry-year { font-size: .82rem; color: var(--muted); padding-top: .15rem; font-weight: 300; }
+    .entry-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; margin-bottom: .2rem; }
+    .entry-place { font-size: .88rem; color: var(--muted); margin-bottom: .5rem; }
+    .entry-desc { font-size: .9rem; line-height: 1.65; color: #4a3f35; }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: .7rem; }
+    .skill-item { border: 1px solid var(--line); padding: .6rem 1rem; font-size: .85rem; display: flex; align-items: center; gap: .5rem; transition: border-color .2s, transform .2s; }
+    .skill-item:hover { border-color: var(--ink); transform: translateY(-2px); }
+    .skill-item::before { content: '▸'; color: var(--accent); font-size: .7rem; }
+    .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+    .project-card { border: 1px solid var(--line); padding: 1.4rem; position: relative; overflow: hidden; transition: border-color .25s, transform .25s; }
+    .project-card:hover { border-color: var(--ink); transform: translateY(-3px); }
+    .project-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; margin-bottom: .4rem; }
+    .project-desc { font-size: .85rem; line-height: 1.6; color: var(--muted); }
+    .project-tag { display: inline-block; margin-top: .8rem; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); border-bottom: 1px solid var(--accent); }
+    footer { padding: 2rem 0 3rem; display: flex; justify-content: space-between; align-items: center; font-size: .8rem; color: var(--muted); }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 600px) {
+      header { grid-template-columns: 1fr; }
+      .contact-pills { text-align: left; flex-direction: row; flex-wrap: wrap; }
+      .entry { grid-template-columns: 1fr; gap: .2rem; }
+      .projects-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div>
+      <h1 class="name">Muhamad<br/><span>Mahbub</span></h1>
+      <p class="tagline">Cloud Engineer &amp; Full-Stack Developer</p>
+    </div>
+    <div class="contact-pills">
+      <a class="pill" href="mailto:mahbub@email.com">✉ mahbub@email.com</a>
+      <a class="pill" href="https://github.com/muhamad-mahbub">⚙ github.com/muhamad-mahbub</a>
+      <a class="pill" href="#">📍 Cirebon, Indonesia</a>
+      <a class="pill" href="#">🎓 NIM: 2388010014</a>
+    </div>
+  </header>
+
+  <section>
+    <p class="sec-label">Tentang Saya</p>
+    <p class="about-text">Mahasiswa Teknik Informatika yang antusias dalam bidang Cloud Computing, DevOps, dan pengembangan web modern. Berpengalaman membangun pipeline CI/CD otomatis, mengelola infrastruktur berbasis container, serta merancang arsitektur aplikasi yang skalabel di atas platform AWS.</p>
+  </section>
+
+  <section>
+    <p class="sec-label">Pendidikan</p>
+    <div class="entry">
+      <span class="entry-year">2023 — Sekarang</span>
+      <div>
+        <div class="entry-title">S1 Teknik Informatika</div>
+        <div class="entry-place">UIN Siber Syekh Nurjati Cirebon</div>
+        <div class="entry-desc">Fokus pada mata kuliah Administrasi Server, Cloud Computing, dan Rekayasa Perangkat Lunak.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="sec-label">Pengalaman</p>
+    <div class="entry">
+      <span class="entry-year">2024</span>
+      <div>
+        <div class="entry-title">Lab Assistant — Jaringan Komputer</div>
+        <div class="entry-place">Laboratorium Informatika, UIN SSC</div>
+        <div class="entry-desc">Membantu praktikum konfigurasi jaringan dan administrasi server Linux bagi mahasiswa semester 3.</div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="entry-year">2024</span>
+      <div>
+        <div class="entry-title">Freelance Web Developer</div>
+        <div class="entry-place">Remote</div>
+        <div class="entry-desc">Mengerjakan beberapa proyek website untuk klien lokal menggunakan stack PHP, MySQL, dan deployment di VPS.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="sec-label">Proyek</p>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-title">UAS Cloud Deployment</div>
+        <div class="project-desc">Multi-container app di AWS EC2 dengan CI/CD pipeline GitHub Actions, Docker Compose, dan MariaDB auto-seeding.</div>
+        <span class="project-tag">Docker · AWS · GitHub Actions</span>
+      </div>
+      <div class="project-card">
+        <div class="project-title">PHP Admin Dashboard</div>
+        <div class="project-desc">Dashboard manajemen produk dengan sistem login, koneksi MariaDB, dan tampilan data real-time.</div>
+        <span class="project-tag">PHP · MariaDB · Nginx</span>
+      </div>
+      <div class="project-card">
+        <div class="project-title">Web Profil UMKM</div>
+        <div class="project-desc">Website profil dan landing page untuk usaha kuliner lokal, dihosting di VPS dengan SSL.</div>
+        <span class="project-tag">PHP · MySQL · Nginx</span>
+      </div>
+      <div class="project-card">
+        <div class="project-title">Server Monitoring</div>
+        <div class="project-desc">Script monitoring server sederhana menggunakan bash dan notifikasi otomatis via Telegram Bot.</div>
+        <span class="project-tag">Bash · Linux · Telegram API</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="sec-label">Keahlian</p>
+    <div class="skills-grid">
+      <div class="skill-item">Docker &amp; Container</div>
+      <div class="skill-item">AWS EC2 / S3</div>
+      <div class="skill-item">GitHub Actions</div>
+      <div class="skill-item">Nginx / Apache</div>
+      <div class="skill-item">PHP / Laravel</div>
+      <div class="skill-item">MySQL / MariaDB</div>
+      <div class="skill-item">Linux / Bash</div>
+      <div class="skill-item">Git / GitHub</div>
+      <div class="skill-item">HTML / CSS / JS</div>
+      <div class="skill-item">CI/CD Pipeline</div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2025 Muhamad Mahbub — 2388010014</span>
+    <span>UAS Administrasi Server · UIN SSC</span>
+  </footer>
+</div>
+</body>
+</html>
