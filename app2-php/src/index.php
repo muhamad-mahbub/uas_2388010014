@@ -336,3 +336,4 @@ if ($page === 'dashboard' && $pdo) {
 </body>
 </html>
  
+<?php // v2-crud
