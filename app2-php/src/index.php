@@ -335,3 +335,4 @@ if ($page === 'dashboard' && $pdo) {
 <?php endif; ?>
 </body>
 </html>
+ 
