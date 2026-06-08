@@ -11,9 +11,9 @@ CREATE TABLE IF NOT EXISTS users (
 );
 
 INSERT INTO users (username, password, email, role) VALUES
-('admin',  '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin@cloudapp.id', 'admin'),
-('budi',   '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'budi@email.com',    'user'),
-('siti',   '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'siti@email.com',    'user');
+('admin',  '$2y$10$S3krR4u0duoYm/iAX9E1sOXOwlYzFLuCMkRUH7lViLMVsdThsC0P.', 'admin@cloudapp.id', 'admin'),
+('budi',   '$2y$10$S3krR4u0duoYm/iAX9E1sOXOwlYzFLuCMkRUH7lViLMVsdThsC0P.', 'budi@email.com',    'user'),
+('siti',   '$2y$10$S3krR4u0duoYm/iAX9E1sOXOwlYzFLuCMkRUH7lViLMVsdThsC0P.', 'siti@email.com',    'user');
 
 CREATE TABLE IF NOT EXISTS categories (
     id   INT AUTO_INCREMENT PRIMARY KEY,
